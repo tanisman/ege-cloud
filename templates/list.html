@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block header %}
+  <h1>{% block title %}List Items{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+    <br>
+    <table style="width:100%">
+    <tr><th>#</th><th>Name</th><th>Quantity</th></tr>
+        {% for item in rows %}
+            <tr><td>{{ item.id }}</td><td>{{ item.name }}</td><td>{{ item.qty }}</td></tr>
+        {% endfor %}
+    </table>
+{% endblock %}

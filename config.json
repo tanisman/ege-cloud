@@ -1,0 +1,9 @@
+{
+    "database": {
+        "host": "<host>",
+        "dbname": "postgres",
+        "user": "<username>",
+        "password": "<password>",
+        "ssl": "require"
+    }
+}
